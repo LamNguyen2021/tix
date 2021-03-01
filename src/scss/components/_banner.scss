@@ -1,0 +1,96 @@
+.banner {
+  .left {
+    padding-top: 60px;
+    color: $color-white-0;
+
+    .left__text {
+      font-weight: $fw-bold-0;
+      font-size: $fs-7;
+      margin-bottom: $mg-1;
+    }
+
+    .left__description {
+      margin-bottom: $mg-1;
+    }
+
+    .left__button {
+      background-color: #fb4226;
+      padding: 10px 20px;
+      color: #fff;
+      font-weight: 700;
+      border: none;
+      border-radius: 4px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .left__apps {
+      padding-top: $pd-1;
+      margin-bottom: $mg-1;
+      font-size: $fs-3;
+
+      a {
+        text-decoration: none;
+        color: $color-white-0;
+        border-bottom: 1px solid $color-white-0;
+      }
+    }
+  }
+
+  .right {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+
+    .phone-img {
+      display: block;
+      padding: 0 28%;
+      width: 100%;
+      height: auto;
+      margin-right: 0 !important;
+    }
+
+    #banner__carousel {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding-top: 1.7%;
+      padding-left: 29.3%;
+      padding-right: 29.3%;
+      padding-bottom: 0%;
+
+      .slick-slider .slick-track, .slick-slider .slick-list {
+          border-radius: 23px;
+      }
+
+      .banner__carouselItem {
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+//------ responsive banner
+.banner {
+    @include responsive("large") {
+        padding-top: $pd-1;
+
+        .left {
+            text-align: center;
+
+            .left__text {
+                font-size: $fs-6;
+            }
+
+            .left__description {
+                font-size: $fs-3;
+            }
+        }
+    }
+}

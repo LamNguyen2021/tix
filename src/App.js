@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Banner from './components/banner';
+import Carousel from './components/carousel';
+import Footer from './components/footer';
+import MovieList from './components/movieList';
+import NavBar from "./components/navBar";
+import News from './components/news';
+import ShowTime from './components/showTime';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <NavBar/>
+        <Carousel/>
+        <MovieList/>
+        <ShowTime/>
+        <News/>
+        <Banner/>
+        <Footer/>
+      </div>
+    );
+  }
 }
 
 export default App;

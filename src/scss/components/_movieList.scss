@@ -1,0 +1,27 @@
+#movieList {
+  .nav-tabs {
+    border-bottom: none;
+    margin-bottom: 30px;
+
+    .nav-link {
+      @include setHeight($line-height-1, $height-0);
+      border: none;
+      background-color: transparent;
+      @include styleText($color-black-0, $fs-9, $fw-normal);
+      display: block;
+      transition: all 0.2s;
+
+      &:hover {
+        font-size: $fs-5;
+      }
+    }
+
+    .nav-link.active {
+      color: $color-red-1;
+      font-size: $fs-5;
+      cursor: default;
+    }
+  }
+
+  
+}

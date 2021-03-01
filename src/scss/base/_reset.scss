@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  padding-top: $spacing-between-body-and-top;
+}
+
+.main-container-940 {
+  max-width: 940px;
+  float: none;
+  margin: auto;
+  clear: both;
+}
